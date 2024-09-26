@@ -20,10 +20,7 @@ import { mapActions, mapState, mapGetters } from 'vuex';
             ...mapActions(['changeTag']),
             toFirstPage() {
                 // this.$router.push({ name: 'page', params: { pageId: '1' } })
-                this.$router.push('/project/') // при переключении тега переходим на первую страницу пагинации
-                // покрасим первую кнопку пагинации
-                const firstPageNumber = document.querySelector('.pagination__btn');
-                firstPageNumber.classList.add('pagination__btn_active');
+                this.$router.push('/project/1') // при переключении тега переходим на первую страницу пагинации
             },
         }
         
